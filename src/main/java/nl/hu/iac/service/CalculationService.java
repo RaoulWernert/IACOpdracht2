@@ -28,6 +28,8 @@ public class CalculationService {
 		if(car == null){
 		    return "Cost: 0";
         }
+        System.out.println(cost);
+        System.out.println(car.getConsumption() * cost);
         return "Cost: "+(car.getConsumption() * cost);
 	}
 

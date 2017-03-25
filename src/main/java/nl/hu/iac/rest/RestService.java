@@ -16,7 +16,7 @@ public class RestService {
 	@GET
 	@Path("/car={carId}&cost={cost}")
 	@Produces({MediaType.APPLICATION_JSON})
-	public String Calculate(@PathParam("carId") String carId, @PathParam("carId") String cost) {
+	public String Calculate(@PathParam("carId") String carId, @PathParam("cost") String cost) {
 		return ServiceProvider.getService().Calculate(carId, cost);
 	}
 
